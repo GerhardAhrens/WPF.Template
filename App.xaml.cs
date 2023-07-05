@@ -1,4 +1,8 @@
-﻿namespace WPF.Template
+﻿/*
+ * Export nach: C:\Users\ahrens\Documents\Visual Studio 2022\My Exported Templates
+ */
+
+namespace WPF.Template
 {
     using System;
     using System.Collections;

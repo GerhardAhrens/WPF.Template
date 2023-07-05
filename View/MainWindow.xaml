@@ -9,7 +9,7 @@
     xmlns:local="clr-namespace:WPF.Template"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
-    Title="MainWindow"
+    Title="{Binding Path=ApplicationVersion}"
     Width="800"
     Height="450"
     libWPF:ActionDialogClosing.RaiseClosingHandler="True"
@@ -26,13 +26,16 @@
             Modifiers="Alt" />
     </Window.InputBindings>
 
-    <libWPF:SimpleGrid Columns="*" Rows="30,30,*,35">
+    <libWPF:SimpleGrid
+        Background="WhiteSmoke"
+        Columns="*"
+        Rows="30,30,*,35">
 
         <!--#region Statuszeile-->
         <StatusBar
             Grid.Row="3"
             Grid.ColumnSpan="2"
-            Background="Transparent"
+            Background="#EEEEEE"
             FontSize="13">
             <StatusBarItem x:Name="statusBarItemUserDomainName" DockPanel.Dock="Left">
                 <StackPanel Orientation="Horizontal">
